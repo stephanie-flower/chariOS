@@ -1,6 +1,6 @@
 /// <reference types="react" />
-export interface TaskBarProps {
+export interface TaskbarProps {
     content: string;
 }
-declare const TaskBar: (props: TaskBarProps) => JSX.Element;
-export default TaskBar;
+declare const Taskbar: (props: TaskbarProps) => JSX.Element;
+export default Taskbar;

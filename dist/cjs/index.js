@@ -2804,9 +2804,9 @@ function requireReact_development () {
 
 var React = /*@__PURE__*/getDefaultExportFromCjs(react.exports);
 
-var TaskBar = function (props) {
+var Taskbar = function (props) {
     return React.createElement("div", { className: "taskbar" }, props.content);
 };
 
-exports.Taskbar = TaskBar;
+exports.Taskbar = Taskbar;
 //# sourceMappingURL=index.js.map
