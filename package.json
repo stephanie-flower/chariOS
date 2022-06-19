@@ -1,0 +1,24 @@
+{
+  "name": "charios",
+  "version": "1.0.0",
+  "description": "React component library for Windows-style interfaces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanie-flower/chariOS.git"
+  },
+  "author": "Stephanie Flower",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanie-flower/chariOS/issues"
+  },
+  "homepage": "https://github.com/stephanie-flower/chariOS#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.14",
+    "react": "^18.2.0",
+    "typescript": "^4.7.4"
+  }
+}
