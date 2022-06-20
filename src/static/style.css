@@ -1,0 +1,50 @@
+
+body {
+	/* background: rgb(156,252,174); */
+	/* background: linear-gradient(90deg, rgba(156,252,174,1) 0%, rgba(139,247,245,1) 32%, rgba(249,171,249,1) 68%, rgba(245,244,170,1) 100%); */
+	max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+.taskbar, .taskbarwindow, .startButton, .clock {
+    border-bottom: solid 2px #808080;
+	border-right: solid 2px #808080;
+	border-top: solid 2px #FEFFFF;
+	border-left: solid 2px #FEFFFF;
+    background-color: #EEF2F5;
+}
+
+.taskbar {
+    position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 99.8%;
+	height: 2vw;
+	display: flex;
+	flex-direction: row;
+	font-size: 1.25vw;
+}
+
+.taskbarwindow {
+	/* display: none; */
+	padding: 4px;
+	cursor: pointer;
+}
+
+.startbutton {
+	padding: 4px;
+	cursor: pointer;
+}
+
+.startbutton img {
+	height: 1vw;
+	width: auto;
+}
+
+.clock {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: auto;
+}

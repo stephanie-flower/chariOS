@@ -5,3 +5,5 @@ module.exports = {
       "@babel/preset-typescript",
     ],
   };
+
+babel: async options => ({ ...options, configFile: false })
