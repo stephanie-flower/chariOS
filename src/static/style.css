@@ -8,7 +8,7 @@ body {
     font-weight: 400;
 }
 
-.taskbar, .taskbarwindow, .startButton, .clock {
+.taskbar, .taskbarwindow, .startbutton, .clock {
     border-bottom: solid 2px #808080;
 	border-right: solid 2px #808080;
 	border-top: solid 2px #FEFFFF;
@@ -41,6 +41,7 @@ body {
 .startbutton img {
 	height: 1vw;
 	width: auto;
+	margin-right: 0.3vw;
 }
 
 .clock {
