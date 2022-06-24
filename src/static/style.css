@@ -8,7 +8,7 @@ body {
     font-weight: 400;
 }
 
-.taskbar, .taskbarwindow, .startbutton, .clock {
+.taskbar, .taskbarwindow, .startbutton, .clock, .mainbox, .topbarbuttons div {
     border-bottom: solid 2px #808080;
 	border-right: solid 2px #808080;
 	border-top: solid 2px #FEFFFF;
@@ -48,4 +48,50 @@ body {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-left: auto;
+}
+
+.window {
+	position: absolute;
+	background-color: #EEF2F5;
+	padding: 4px;
+	box-shadow: 2px 2px #010101;
+	max-width: 60%;
+	min-width: 20%;
+}
+
+.topbar {
+	display: flex;
+	flex-direction: row;
+	background: rgb(78,150,241);
+	background: linear-gradient(90deg, rgba(78,150,241,1) 0%, rgba(197,227,255,1) 100%);
+	padding: 5px;
+	font-size: 1rem;
+	color: white;
+}
+
+.topbarbuttons {
+	margin-left: auto;
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+}
+
+.topbarbuttons div {
+	background-color: #EEF2F5;
+	padding: 4px;
+	box-shadow: 2px 2px #010101;
+	width: 16px;
+	font-size: 1rem;
+	color: black;
+}
+
+.topbartitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 0.2rem;
+}
+
+.windowcontent {
+	padding: 0.7rem;
 }
