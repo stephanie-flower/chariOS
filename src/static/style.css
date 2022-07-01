@@ -57,6 +57,8 @@ body {
 	box-shadow: 2px 2px #010101;
 	max-width: 60%;
 	min-width: 20%;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .topbar {

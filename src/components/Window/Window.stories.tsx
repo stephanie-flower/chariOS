@@ -18,7 +18,7 @@ export default {
 export const WindowWithComponent = () => {
     return ( 
     <>
-        <Window title="Window Title">
+        <Window id="window1" title="Window Title" draggable={true} defaultPosition={{x: 0, y: 0}} >
             <ExampleComponent />
         </Window>
     </>

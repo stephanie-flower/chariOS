@@ -11,9 +11,12 @@ const DesktopIcon = (props: DesktopIconProps) => {
 
     return (
         <>
-        <div className="desktopicon">
-
-        </div>
+        <a href={this.props.link}>
+            <div className="desktopicon">
+                <img src={this.props.img} alt={this.props.name} />
+                <div className="desktopiconname">{this.props.name}</div>
+            </div>
+        </a>
         </>
     )
 }
