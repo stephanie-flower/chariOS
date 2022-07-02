@@ -1,3 +1,17 @@
+:root {
+	--border-highlight: #FEFFFF;
+	--border-shadow: #808080;
+	--window-background-colour: #EEF2F5;
+	--window-header-gradient-left: rgba(78,150,241,1);
+	--window-header-gradient-right: rgba(197,227,255,1);
+	--window-header-text-colour: white;
+	--window-shadow: black;
+	--window-text-colour: black;
+	--start-menu: #EEF2F5;
+	--start-menu-text: black;
+	--start-menu-option-hover: rgb(85, 85, 85);
+}
+
 
 body {
 	/* background: rgb(156,252,174); */
@@ -14,11 +28,11 @@ a {
 }
 
 .taskbar, .taskbarwindow, .startbutton, .clock, .mainbox, .topbarbuttons div, .start-menu-option {
-    border-bottom: solid 2px #808080;
-	border-right: solid 2px #808080;
-	border-top: solid 2px #FEFFFF;
-	border-left: solid 2px #FEFFFF;
-    background-color: #EEF2F5;
+    border-bottom: solid 2px var(--border-shadow);
+	border-right: solid 2px var(--border-shadow);
+	border-top: solid 2px var(--border-highlight);
+	border-left: solid 2px var(--border-highlight);
+    background-color: var(--window-background-colour);
 }
 
 .taskbar {
@@ -57,23 +71,24 @@ a {
 
 .window {
 	position: absolute;
-	background-color: #EEF2F5;
+	background-color: var(--window-background-colour);
 	padding: 4px;
-	box-shadow: 2px 2px #010101;
+	box-shadow: 2px 2px var(--window-shadow);
 	max-width: 60%;
 	min-width: 20%;
 	-webkit-user-select: none;
 	user-select: none;
+	color: var(--window-text-colour);
 }
 
 .topbar {
 	display: flex;
 	flex-direction: row;
-	background: rgb(78,150,241);
-	background: linear-gradient(90deg, rgba(78,150,241,1) 0%, rgba(197,227,255,1) 100%);
+	background: var(--window-header-gradient-left);
+	background: linear-gradient(90deg, var(--window-header-gradient-left) 0%, var(--window-header-gradient-right) 100%);
 	padding: 5px;
 	font-size: 1rem;
-	color: white;
+	color: var(--window-header-text-colour);
 }
 
 .topbarbuttons {
@@ -84,12 +99,12 @@ a {
 }
 
 .topbarbuttons div {
-	background-color: #EEF2F5;
+	background-color: var(--window-background-colour);
 	padding: 4px;
-	box-shadow: 2px 2px #010101;
+	box-shadow: 2px 2px var(--window-shadow);
 	width: 16px;
 	font-size: 1rem;
-	color: black;
+	color: var(--window-text-colour);
 }
 
 .topbartitle {
@@ -105,11 +120,12 @@ a {
 
 .start-menu {
 	display: none;
-	background-color: #EEF2F5;
+	background-color: var(--start-menu);
     width: 20%;
     bottom: 2vw;
     left: 0;
     position: absolute;
+	color: var(--start-menu);
 }
 
 .start-menu-option {
@@ -123,5 +139,5 @@ a {
 }
 
 .start-menu-option:hover {
-	background-color: rgb(85, 85, 85);
+	background-color: var(--start-menu-option-hover);
 }
