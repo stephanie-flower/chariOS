@@ -26,9 +26,9 @@ export const WithoutActiveWindows = () => {
 }
 
 export const WithMenuOptions = () => {
-  return <Taskbar currentWindows={windowsList} startMenuImg={StartMenuImage} menuOptions={menuOptions} />
+  return <Taskbar currentWindows={noWindowsList} startMenuImg={StartMenuImage} menuOptions={menuOptions} />
 }
 
 export const WithoutMenuOptions = () => {
-  return <Taskbar currentWindows={windowsList} startMenuImg={StartMenuImage} />
+  return <Taskbar currentWindows={noWindowsList} startMenuImg={StartMenuImage} />
 }

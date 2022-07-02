@@ -9,5 +9,9 @@ export default {
 } as Meta;
 
 export const OpensWindow = () => {
-    return <DesktopIcon img={DesktopIconImage} name="About" link="/About" />
+    return <DesktopIcon img={DesktopIconImage} name="About" link="windowId" window={true} />
+}
+
+export const OpensLink = () => {
+    return <DesktopIcon img={DesktopIconImage} name="About" link="/about" window={false} />
 }
