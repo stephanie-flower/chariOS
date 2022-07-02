@@ -8,7 +8,12 @@ body {
     font-weight: 400;
 }
 
-.taskbar, .taskbarwindow, .startbutton, .clock, .mainbox, .topbarbuttons div {
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.taskbar, .taskbarwindow, .startbutton, .clock, .mainbox, .topbarbuttons div, .start-menu-option {
     border-bottom: solid 2px #808080;
 	border-right: solid 2px #808080;
 	border-top: solid 2px #FEFFFF;
@@ -96,4 +101,27 @@ body {
 
 .windowcontent {
 	padding: 0.7rem;
+}
+
+.start-menu {
+	display: none;
+	background-color: #EEF2F5;
+    width: 20%;
+    bottom: 2vw;
+    left: 0;
+    position: absolute;
+}
+
+.start-menu-option {
+	width: auto;
+    margin: 2px;
+    height: 3vw;
+    line-height: 3vw;
+    align-items: center;
+    padding-left: 4px;
+	cursor: pointer;
+}
+
+.start-menu-option:hover {
+	background-color: rgb(85, 85, 85);
 }
