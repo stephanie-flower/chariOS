@@ -76,9 +76,12 @@ a {
 	box-shadow: 2px 2px var(--window-shadow);
 	max-width: 60%;
 	min-width: 20%;
+	min-height: 13.5%;
 	-webkit-user-select: none;
 	user-select: none;
 	color: var(--window-text-colour);
+	resize: both;
+	overflow: auto;
 }
 
 .topbar {
